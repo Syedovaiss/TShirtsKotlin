@@ -3,9 +3,11 @@ package com.ovais.office.tshirtskotlin.features.tshirts.view
 import android.app.ProgressDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.RecyclerView
 import com.ovais.office.tshirtskotlin.R
 import com.ovais.office.tshirtskotlin.features.tshirts.contracts.TShirtContracts
 import com.ovais.office.tshirtskotlin.features.tshirts.presenter.TShirtPresenterImpl
+import kotlinx.android.synthetic.main.activity_tshirt.*
 
 class TShirtActivity : AppCompatActivity(), TShirtContracts.TShirtView {
 
@@ -19,15 +21,17 @@ class TShirtActivity : AppCompatActivity(), TShirtContracts.TShirtView {
     }
 
     override fun setupRecyclerView() {
+       var recyclerView=findViewById<RecyclerView>(R.id.shirt_recycler_view)
+
         progressDialog.show()
         presenter.getDataFromInteractor()
         progressDialog.dismiss()
 
     }
 
-
     override fun navigateToShirtDetails() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+
     }
 
 
