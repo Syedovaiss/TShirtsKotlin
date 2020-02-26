@@ -1,0 +1,24 @@
+<resources>
+    <!--    Default-->
+    <string name="app_name">TShirtsKotlin</string>
+    <!--    Splash-->
+    <string name="welcome_back">Welcome Back</string>
+    <!--    LoginActivity-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="usernameError">Username can\'t be empty</string>
+    <string name="passwordError">Password can\'t be empty or less than 8 characters</string>
+    <string name="genderError">Please select gender</string>
+    <string name="gender">Gender</string>
+    <string-array name="gender_array">
+
+        <item>Male</item>
+        <item>Female</item>
+        <item>Rather not to say</item>
+    </string-array>
+    <string name="on_successful_register">Successfully Registered</string>
+    <string name="on_failure_register">Registration Failed</string>
+    <string name="shirt_title">Title</string>
+    <string name="shirt_price">Price</string>
+</resources>
